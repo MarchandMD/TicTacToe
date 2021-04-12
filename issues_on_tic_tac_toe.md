@@ -4,7 +4,7 @@
 * update the image of what the `bundle gem install tic_tac_toe` will generate
 * suggest commenting out certain metadata/TODO items in the `tic_tac_toe.gemspec` file
 * remove the step to add a `spec_helper` file in the `spec` directory;  it's already present in the file structure
-* corrcect the `require` command in the `cell_spec.rb` file to `require_relative` to follow convention
+* corrcect the `require` command in the entire project to `require_relative` to follow convention
 * update, or suggest updating the syntax for the `Cell` class test in RSpec; `describe` is now `RSpec.describe`. 
 * need to add the `Board` class to the "manifest" file in the `/lib` directory
 * first time I did the tutorial...I needed to be guided a little more about what the `#fetch` method was doing...specifically the parameters. 
