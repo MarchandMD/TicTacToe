@@ -15,4 +15,5 @@
 * the `#value` method is sort of loaded here. and it seems to be a pretty high level method; it's actually a little obscure, in terms of the new students ability to process what it's actually doing behind the scenes. Safe to say though, from it's name it's somehow setting it's value. The fact that I'm able to call `#value` on an object I created just earlier in this tutorial is pretty surprising to a noob. 
 * using a Struct
 * need to update the tutorial to no longer use `#stub` because stub isn't defined anymore. Maybe just direct them to RelishApp
-
+* under the code for `#winning_positions ` there is a misspelling for the `#winning_positions` method
+* 
