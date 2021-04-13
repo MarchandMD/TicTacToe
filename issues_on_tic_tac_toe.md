@@ -16,4 +16,5 @@
 * using a Struct
 * need to update the tutorial to no longer use `#stub` because stub isn't defined anymore. Maybe just direct them to RelishApp
 * under the code for `#winning_positions ` there is a misspelling for the `#winning_positions` method
-* 
+* RSpec testing of `Game#initialize` uses an old way of stubbing/allowing....might want to update
+* Perhaps something in the tutorial that suggests an RSpec version?
