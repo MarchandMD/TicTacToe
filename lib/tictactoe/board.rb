@@ -20,6 +20,12 @@ module Tictactoe
       false
     end
 
+    def formatted_grid
+      grid.each do |row|
+        puts row.map { |cell| cell.value.empty? ? "_" : cell.value }.join(" ")
+      end
+    end
+
     def winner?
       winning_positions.each do |winning_position|
         next if winning_position_values(winning_position).all_empty?
