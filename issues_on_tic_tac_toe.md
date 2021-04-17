@@ -1,11 +1,16 @@
 # possible open source contributions to tic tac toe project
 
-* update the test for the player class `#initializiation` test to specify for an error (or at least suggest documentation for future users to reference)
+* update the test for the player class `#initialize` method to specify for an error (or at least suggest documentation for future users to reference)
 * update the image of what the `bundle gem install tic_tac_toe` will generate
 * suggest commenting out certain metadata/TODO items in the `tic_tac_toe.gemspec` file
 * remove the step to add a `spec_helper` file in the `spec` directory;  it's already present in the file structure
+<<<<<<< HEAD
 * corrcect the `require` command in the entire project to `require_relative` to follow convention
 * ~~update, or suggest updating the syntax for the `Cell` class test in RSpec; `describe` is now `RSpec.describe`~~
+=======
+* correct the `require` command in the entire project to `require_relative` to follow convention
+* update, or suggest updating the syntax for the `Cell` class test in RSpec; `describe` is now `RSpec.describe`. 
+>>>>>>> origin/main
 * need to add the `Board` class to the "manifest" file in the `/lib` directory
 * first time I did the tutorial...I needed to be guided a little more about what the `#fetch` method was doing...specifically the parameters. 
 * I also needed help with default values on parameters
@@ -14,13 +19,17 @@
 * the RSpec test for `#have` is no longer used. Update the tutorial to either be exact, or direct the person to the documentation. 
 * the `#value` method is sort of loaded here. and it seems to be a pretty high level method; it's actually a little obscure, in terms of the new students ability to process what it's actually doing behind the scenes. Safe to say though, from it's name it's somehow setting it's value. The fact that I'm able to call `#value` on an object I created just earlier in this tutorial is pretty surprising to a noob. 
 * using a Struct
-* need to update the tutorial to no longer use `#stub` because stub isn't defined anymore. Maybe just direct them to RelishApp
+* need to update the tutorial to no longer use `#stub` because stub isn't defined anymore. Maybe just direct them to RelishApp. But it should be using `allow(object instance).to receive(instance method) { forced_value} `
 * under the code for `#winning_positions ` there is a misspelling for the `#winning_positions` method
 * RSpec testing of `Game#initialize` uses an old way of stubbing/allowing....might want to update
 * Perhaps something in the tutorial that suggests an RSpec version?
+<<<<<<< HEAD
 
 # This was an error from RSpec when testing: 
 * using `stub-chain` from rspec-mocks' old `:should` syntax without...is deprecated. Use the new `:expect` or explicitly enable `:should` instead. 
 * `raise-error` is an issue
 
 
+=======
+* The visual aid for the `Game#get_move` method needs the second test to be updated. This is a really small issue
+>>>>>>> origin/main
