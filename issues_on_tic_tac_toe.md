@@ -5,7 +5,7 @@
 * suggest commenting out certain metadata/TODO items in the `tic_tac_toe.gemspec` file
 * remove the step to add a `spec_helper` file in the `spec` directory;  it's already present in the file structure
 * corrcect the `require` command in the entire project to `require_relative` to follow convention
-* update, or suggest updating the syntax for the `Cell` class test in RSpec; `describe` is now `RSpec.describe`. 
+* ~~update, or suggest updating the syntax for the `Cell` class test in RSpec; `describe` is now `RSpec.describe`~~
 * need to add the `Board` class to the "manifest" file in the `/lib` directory
 * first time I did the tutorial...I needed to be guided a little more about what the `#fetch` method was doing...specifically the parameters. 
 * I also needed help with default values on parameters
@@ -18,3 +18,9 @@
 * under the code for `#winning_positions ` there is a misspelling for the `#winning_positions` method
 * RSpec testing of `Game#initialize` uses an old way of stubbing/allowing....might want to update
 * Perhaps something in the tutorial that suggests an RSpec version?
+
+# This was an error from RSpec when testing: 
+* using `stub-chain` from rspec-mocks' old `:should` syntax without...is deprecated. Use the new `:expect` or explicitly enable `:should` instead. 
+* `raise-error` is an issue
+
+
