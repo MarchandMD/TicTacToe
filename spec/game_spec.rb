@@ -4,7 +4,7 @@ module Tictactoe
   RSpec.describe Game do
     let(:bob) { Player.new({ color: 'X', name: 'bob' }) }
     let(:frank) { Player.new({ color: 'O', name: 'frank' }) }
-    let(:mike) { Player.new({ color: 'Y', name: 'mike' }) }
+    
 
     context '#initialize' do
       it 'randomly selects a current player' do
@@ -55,6 +55,24 @@ module Tictactoe
       it 'converts the human move of 7 to [0,2]' do
         game = Game.new([bob, frank])
         expect(game.get_move('7')).to eq [0, 2]
+      end
+    end
+
+    context '#move_valid?' do
+      it 'returns true if the cell is available' do
+        #something here
+        game = Game.new([bob, frank])
+        x,y = [0,0]
+        expect(game.valid_move?(x,y)).to be true
+      end
+
+      it 'returns false if the cell is populated' do
+        grid = [["x", "", ""]]
+        game = Game.new([bob, frank], grid)
+        x,y = [0,0]
+        allow_any_instance_of(Array).to receive(:get_cell) { "x" }
+        allow_any_instance_of(String).to receive(:value) { "x" }
+        expect(game.valid_move?(x,y)).to be false
       end
     end
 

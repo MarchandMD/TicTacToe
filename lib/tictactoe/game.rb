@@ -22,8 +22,8 @@ module Tictactoe
       human_move_to_coordinate(human_move)
     end
 
-    def valid_move?
-      # if move is valid ? set_cell : get_move
+    def valid_move?(x, y)
+       board.get_cell(x, y).value == "" ? true : false
     end
 
     def game_over_message
@@ -38,7 +38,10 @@ module Tictactoe
         puts ''
         puts solicit_move
         x, y = get_move
-        # valid_move?
+        until valid_move?(x,y)
+          puts "That space is taken; try again"
+          x, y = get_move
+        end
         board.set_cell(x, y, current_player.color)
         if board.game_over
           puts game_over_message
