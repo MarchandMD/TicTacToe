@@ -1,6 +1,6 @@
 # Tictactoe
 
-Welcome to this repository! It's a gem I built, but it hasn't been deployed on Rubygems or anything. 
+Welcome to this repository! It's a gem I built, by following along to [this tutorial](https://codequizzes.wordpress.com/2013/10/25/creating-a-tic-tac-toe-game-with-ruby/) but it hasn't been deployed on Rubygems or anything. 
 
 To experiment with the code, run `bin/console` for an interactive prompt.
 
