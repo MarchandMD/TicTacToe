@@ -58,24 +58,6 @@ module Tictactoe
       end
     end
 
-    context '#move_valid?' do
-      it 'returns true if the cell is available' do
-        #something here
-        game = Game.new([bob, frank])
-        x,y = [0,0]
-        expect(game.valid_move?(x,y)).to be true
-      end
-
-      it 'returns false if the cell is populated' do
-        grid = [["x", "", ""]]
-        game = Game.new([bob, frank], grid)
-        x,y = [0,0]
-        allow_any_instance_of(Array).to receive(:get_cell) { "x" }
-        allow_any_instance_of(String).to receive(:value) { "x" }
-        expect(game.valid_move?(x,y)).to be false
-      end
-    end
-
     context '#game_over_message' do
       it "returns ' {current player name} won! if board shows a winner" do
         game = Game.new([bob, frank])

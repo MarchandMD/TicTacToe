@@ -4,14 +4,8 @@
 * update the image of what the `bundle gem install tic_tac_toe` will generate
 * suggest commenting out certain metadata/TODO items in the `tic_tac_toe.gemspec` file
 * remove the step to add a `spec_helper` file in the `spec` directory;  it's already present in the file structure
-<<<<<<< HEAD
-* corrcect the `require` command in the entire project to `require_relative` to follow convention
-* ~~update, or suggest updating the syntax for the `Cell` class test in RSpec; `describe` is now `RSpec.describe`~~
-=======
 * correct the `require` command in the entire project to `require_relative` to follow convention
-* update, or suggest updating the syntax for the `Cell` class test in RSpec; `describe` is now `RSpec.describe`. 
->>>>>>> origin/main
-* need to add the `Board` class to the "manifest" file in the `/lib` directory
+* ~~update, or suggest updating the syntax for the `Cell` class test in RSpec; `describe` is now `RSpec.describe`.~~ 
 * first time I did the tutorial...I needed to be guided a little more about what the `#fetch` method was doing...specifically the parameters. 
 * I also needed help with default values on parameters
 * I also needed some guidance with what `#default_grid` was actually doing; perhaps suggesting to use IRB here....
@@ -23,13 +17,4 @@
 * under the code for `#winning_positions ` there is a misspelling for the `#winning_positions` method
 * RSpec testing of `Game#initialize` uses an old way of stubbing/allowing....might want to update
 * Perhaps something in the tutorial that suggests an RSpec version?
-<<<<<<< HEAD
-
-# This was an error from RSpec when testing: 
-* using `stub-chain` from rspec-mocks' old `:should` syntax without...is deprecated. Use the new `:expect` or explicitly enable `:should` instead. 
-* `raise-error` is an issue
-
-
-=======
 * The visual aid for the `Game#get_move` method needs the second test to be updated. This is a really small issue
->>>>>>> origin/main
